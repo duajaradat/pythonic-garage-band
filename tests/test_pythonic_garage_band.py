@@ -13,11 +13,18 @@ def test_guitarist_repr():
     assert actual==expected
 
 def test_drummer_repr(): 
+    """
+    test the drummer repr 
+    """
     actual=repr(Drummer("Ali"))
     expected="I am  : Ali , Plays : "
     assert actual==expected
 
-def test_band_name(): 
+def test_band_name():
+    """
+    test the band name 
+
+    """ 
     the_rock=Band("The Rock",[]) 
     assert the_rock.name=="The Rock"
 
@@ -32,14 +39,22 @@ def test_solo(band_data):
         if member.get_instrument()=="guitar":
             assert member.play_solo()=="guit guit guit"
 
+def test_how_many_solo(band_data):
+    """
+    test the how many solo was played
+    """
+    solo=band_data.play_solos()
+    assert len(solo)==1            
+
 def test_band_member(band_data):
+    """
+    how many members in the band
+    """
     actual =len(band_data.members)
     expected = 3
     assert actual==expected
 
-def test_how_many_solo_in_Lele(band_data):
-    solo=band_data.play_solos()
-    assert len(solo)==1
+
 
 
 @pytest.fixture
