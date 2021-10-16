@@ -36,7 +36,12 @@ def test_band_member(band_data):
     actual =len(band_data.members)
     expected = 3
     assert actual==expected
-    
+
+def test_how_many_solo_in_Lele(band_data):
+    solo=band_data.play_solos()
+    assert len(solo)==1
+
+
 @pytest.fixture
 def lele():
     return{
