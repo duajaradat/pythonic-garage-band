@@ -78,7 +78,7 @@ class Guitarist(Musician):
     inherit Class 
     """ 
     def get_instrument(self):  
-        pass
+        return "guitar"
     def play_solo(self):
         return "guit guit guit"
      
@@ -88,7 +88,7 @@ class Bassist(Musician):
     inherit Class 
     """
     def get_instrument(self):  
-        pass
+        return "bass"
     def play_solo(self):
         return "bass bass bass"
 
@@ -97,7 +97,7 @@ class Drummer(Musician):
     inherit Class 
     """
     def get_instrument(self):  
-        pass
+        return "drum"
     def play_solo(self):
         return "drum drum drum"
 
