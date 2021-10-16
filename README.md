@@ -2,7 +2,7 @@
 
 ## Links & Resourdes
 
-- [Pull Request]()
+- [Pull Request](https://github.com/duajaradat/pythonic-garage-band/pull/1)
 
 ## Overview
 
