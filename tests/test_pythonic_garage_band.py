@@ -12,6 +12,13 @@ def test_guitarist_repr():
     expected="I am  : Ali , Plays : "
     assert actual==expected
 
+def test_drummer_repr(): 
+    actual=repr(Drummer("Ali"))
+    expected="I am  : Ali , Plays : "
+    assert actual==expected
+def test_band_name(): 
+    the_rock=Band("The Rock",[]) 
+    assert the_rock.name=="The Rock"   
 # @pytest.fixture
 # def prep():
 #     Guitarist()
