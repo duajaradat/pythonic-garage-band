@@ -31,6 +31,12 @@ def test_solo(band_data):
     for member in band_data.members:
         if member.get_instrument()=="guitar":
             assert member.play_solo()=="guit guit guit"
+
+def test_band_member(band_data):
+    actual =len(band_data.members)
+    expected = 3
+    assert actual==expected
+    
 @pytest.fixture
 def lele():
     return{
